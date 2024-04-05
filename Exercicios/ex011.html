@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Consulado do Brasil</h1>
+    <p>Você está no consulado do brasil, qual pais você está morando: <input type="text" name="txtvel" id="txtvel"></p>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector(`input#txtvel`)
+            var res = window.document.querySelector(`div#res`)
+            var vel = (txtv.value)
+            res.innerHTML = `<p> Você está falando do (a) <strong>${vel} </strong> </p>`
+            if (vel === `Brasil`) {
+                res.innerHTML += `<p> Você e <strong> Brasileiro</strong> portanto torça pro Sport </p>`
+            } else if (vel != 'Brasil'){
+                res.innerHTML += `<p>Você está fora do Pais portanto você é um <strong>BOSTA</strong> </p>`
+            }
+            res.innerHTML += `<p>87 é nosso 2008 também"</p>`
+        }
+    </script>
+</body>
+</html>
