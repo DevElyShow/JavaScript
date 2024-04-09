@@ -1,5 +1,4 @@
-var c = 1
+var x = 10
+var y = 3
 
-for (var c = 1; c <=10 ; c++){
-
-}
+console.log = x % y
